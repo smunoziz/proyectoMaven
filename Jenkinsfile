@@ -53,7 +53,7 @@ pipeline {
                                 -Dsonar.login=429d6a159392f3a17187a1c6421f44d5d369c1b1
                             """
                         }
-                        timeout (time: 10 unit: 'MINUTES'){
+                        timeout (time: 10, unit: 'MINUTES'){
                             waitForQualityGate abortPipeline: true
                         }
                         
